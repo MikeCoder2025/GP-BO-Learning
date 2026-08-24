@@ -285,8 +285,7 @@ def create_initial_pharma_data():
         bounds[:, 1]
     )
 
-    y,
-    impurity = run_pharma_experiment(
+    y, impurity = run_pharma_experiment(
         X,
         noise=True,
         random_state=42
