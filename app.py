@@ -434,11 +434,10 @@ with tab1:
         300
     ).reshape(-1, 1)
 
-    mean,
-    std = gp.predict(
-        X_test,
-        return_std=True
-    )
+    mean, std = gp.predict(
+    X_test,
+    return_std=True
+)
 
     true_y = hidden_1d_function(
         X_test[:, 0]
@@ -586,8 +585,7 @@ with tab2:
         500
     ).reshape(-1, 1)
 
-    mean_bo,
-    std_bo = gp_bo.predict(
+    mean_bo, std_bo = gp_bo.predict(
         grid,
         return_std=True
     )
@@ -1113,14 +1111,12 @@ with tab4:
         candidates
     )
 
-    mean_y,
-    std_y = gp_yield.predict(
+    mean_y, std_y = gp_yield.predict(
         candidates_scaled,
         return_std=True
     )
 
-    mean_i,
-    std_i = gp_impurity.predict(
+    mean_i, std_i = gp_impurity.predict(
         candidates_scaled,
         return_std=True
     )
