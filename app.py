@@ -1035,8 +1035,7 @@ with tab4:
         return_std=True
     )
 
-    pred_impurity,
-    std_impurity = gp_impurity.predict(
+    pred_impurity, std_impurity = gp_impurity.predict(
         user_scaled,
         return_std=True
     )
