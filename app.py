@@ -1030,8 +1030,7 @@ with tab4:
         user_condition
     )
 
-    pred_yield,
-    std_yield = gp_yield.predict(
+    pred_yield, std_yield = gp_yield.predict(
         user_scaled,
         return_std=True
     )
