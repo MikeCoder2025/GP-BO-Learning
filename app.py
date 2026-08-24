@@ -1211,8 +1211,7 @@ with tab4:
         "Run Recommended Pharmaceutical Experiment"
     ):
 
-        new_y,
-        new_i = run_pharma_experiment(
+        new_y, new_i = run_pharma_experiment(
             X_next,
             noise=True,
             random_state=(
