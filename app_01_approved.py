@@ -1,4 +1,48 @@
 # ============================================================
+# PAGE SETTINGS
+# ============================================================
+
+st.set_page_config(
+    page_title="Optimisation Accelerator Programme",
+    page_icon="🚀",
+    layout="wide"
+)
+
+
+# ============================================================
+# HIDE STREAMLIT THEME / SETTINGS MENU
+# ============================================================
+
+st.html("""
+<style>
+
+#MainMenu {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+[data-testid="stToolbar"] {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+[data-testid="stDecoration"] {
+    display: none !important;
+}
+
+</style>
+""")
+
+
+# ============================================================
+# APP STYLING
+# ============================================================
+
+st.html("""
+<style>
+...
+
+# ============================================================
 # GP-BO LEARNING LAB
 # Simple educational software for:
 # 1. Gaussian Processes
